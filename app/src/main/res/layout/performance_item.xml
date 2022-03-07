@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardCornerRadius="8dp"
+    android:layout_marginTop="8dp"
+    android:layout_marginHorizontal="8dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="8dp">
+
+        <TextView
+            android:id="@+id/tv_history_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="25/09/21" />
+
+        <TextView
+            android:id="@+id/tv_history_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv_history_date"
+            tools:text="17:26:30" />
+
+        <androidx.constraintlayout.widget.Barrier
+            android:id="@+id/br_history_1"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:barrierDirection="end"
+            app:constraint_referenced_ids="tv_history_date, tv_history_time" />
+
+        <TextView
+            android:id="@+id/tv_history_accuracy_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/accuracy"
+            android:textSize="16sp"
+            android:layout_marginStart="8dp"
+            app:layout_constraintStart_toEndOf="@+id/br_history_1"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tv_history_accuracy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:textSize="16sp"
+            app:layout_constraintStart_toEndOf="@id/tv_history_accuracy_label"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="85%" />
+
+        <TextView
+            android:id="@+id/tv_history_answers_to_problems_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:text="@string/answers_problems"
+            android:textSize="16sp"
+            app:layout_constraintStart_toEndOf="@+id/br_history_1"
+            app:layout_constraintTop_toBottomOf="@id/tv_history_accuracy_label" />
+
+        <TextView
+            android:id="@+id/tv_history_answers_to_problems"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:textSize="16sp"
+            app:layout_constraintStart_toEndOf="@id/tv_history_answers_to_problems_label"
+            app:layout_constraintTop_toBottomOf="@id/tv_history_accuracy_label"
+            tools:text="14/17" />
+
+        <TextView
+            android:id="@+id/tv_history_seconds_to_answer_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:text="@string/seconds_to_answer"
+            android:textSize="16sp"
+            app:layout_constraintStart_toEndOf="@+id/br_history_1"
+            app:layout_constraintTop_toBottomOf="@id/tv_history_answers_to_problems_label" />
+
+        <TextView
+            android:id="@+id/tv_history_seconds_to_answer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:textSize="16sp"
+            app:layout_constraintStart_toEndOf="@id/tv_history_seconds_to_answer_label"
+            app:layout_constraintTop_toBottomOf="@id/tv_history_answers_to_problems_label"
+            tools:text="2.34" />
+
+        <TextView
+            android:id="@+id/tv_history_rank"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="36sp"
+            tools:textColor="@color/green"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:includeFontPadding="false"
+            tools:text="A" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.cardview.widget.CardView>

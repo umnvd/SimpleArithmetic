@@ -1,0 +1,51 @@
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <PreferenceCategory android:title="Training game">
+
+        <MultiSelectListPreference
+            android:defaultValue="@array/operations_values"
+            android:dialogTitle="Select operations"
+            android:entries="@array/operations_entries"
+            android:entryValues="@array/operations_values"
+            android:key="operations"
+            android:title="Arithmetic operations"
+            tools:summary="Addition, Subtraction, Multiplication, Division" />
+
+        <SeekBarPreference
+            android:defaultValue="1"
+            android:dialogTitle="Min_value"
+            android:key="min_value"
+            android:max="10"
+            android:title="Min value"
+            app:min="1"
+            app:showSeekBarValue="true"
+            app:summary="In range 1-10" />
+
+        <SeekBarPreference
+            android:defaultValue="100"
+            android:dialogTitle="Max_value"
+            android:key="max_value"
+            android:max="1000"
+            android:title="Max value"
+            app:min="100"
+            app:showSeekBarValue="true"
+            app:summary="In range 100-1000" />
+
+    </PreferenceCategory>
+
+    <PreferenceCategory android:title="Rating game">
+
+        <ListPreference
+            android:defaultValue="60000"
+            android:dialogTitle="Set game time"
+            android:entries="@array/timer_entries"
+            android:entryValues="@array/timer_values"
+            android:key="timer"
+            android:title="Timer"
+            app:useSimpleSummaryProvider="true" />
+
+    </PreferenceCategory>
+
+</PreferenceScreen>

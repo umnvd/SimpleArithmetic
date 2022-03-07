@@ -1,0 +1,29 @@
+<resources>
+
+    <string-array name="operations_entries">
+        <item>Addition</item>
+        <item>Subtraction</item>
+        <item>Multiplication</item>
+        <item>Division</item>
+    </string-array>
+
+    <string-array name="operations_values">
+        <item>addition</item>
+        <item>subtraction</item>
+        <item>multiplication</item>
+        <item>division</item>
+    </string-array>
+
+    <string-array name="timer_entries">
+        <item>30 seconds</item>
+        <item>1 minute</item>
+        <item>2 minutes</item>
+    </string-array>
+
+    <string-array name="timer_values">
+        <item>30000</item>
+        <item>60000</item>
+        <item>120000</item>
+    </string-array>
+
+</resources>

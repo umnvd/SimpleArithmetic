@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">Simple Arithmetic</string>
+
+    <string name="expression_placeholder">%d %s %d</string>
+    <!-- Preference Titles -->
+    <string name="messages_header">Messages</string>
+    <string name="sync_header">Sync</string>
+
+    <!-- Messages Preferences -->
+    <string name="signature_title">Your signature</string>
+    <string name="reply_title">Default reply action</string>
+
+    <!-- Sync Preferences -->
+    <string name="sync_title">Sync email periodically</string>
+    <string name="attachment_title">Download incoming attachments</string>
+    <string name="attachment_summary_on">Automatically download attachments for incoming emails
+    </string>
+    <string name="attachment_summary_off">Only download attachments when manually requested</string>
+    <string name="simple_arithmetic">Simple arithmetic</string>
+    <string name="training_game">Training game</string>
+    <string name="rating_game">Rating game</string>
+    <string name="game_history">Game history</string>
+    <string name="settings">Settings</string>
+    <string name="accuracy">Accuracy:</string>
+    <string name="answers_problems">Answers/problems:</string>
+    <string name="seconds_to_answer">Seconds to answer:</string>
+</resources>
